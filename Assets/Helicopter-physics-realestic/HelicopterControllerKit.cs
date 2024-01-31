@@ -101,7 +101,7 @@ public class HelicopterControllerKit : MonoBehaviour
     void engineAcceleration()
     {
         if (enginePower > enginRPM)
-            enginRPM += Time.deltaTime*8;
+            enginRPM += 1;
         engineForce = new Vector3(0, (/*acceleration */Time.deltaTime * enginRPM * (2200) * bladePitch), 0);
     }
     void helicopterAngleSystem()

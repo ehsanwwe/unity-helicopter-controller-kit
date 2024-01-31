@@ -16,7 +16,7 @@ public class FollowerCamera : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void LateUpdate()
     {
         pivote.position = Vector3.Lerp(pivote.position,   target.position, Time.deltaTime   );
         pivote.rotation = Quaternion.Lerp(pivote.rotation,target.rotation, Time.deltaTime*3 );
