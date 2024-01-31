@@ -47,6 +47,8 @@ public class HelicopterControllerKit : MonoBehaviour
         else
             bladePitch = Mathf.Lerp(bladePitch, 0.8f, Time.deltaTime);
 
+
+
         if (Input.GetKey(KeyCode.W))
         {
             if (pitch < 1.57f)
@@ -85,7 +87,7 @@ public class HelicopterControllerKit : MonoBehaviour
     {
         body.AddRelativeForce(engineForce, ForceMode.Force);
         transform.localEulerAngles = bodyTorque;
-        topSolidBlade.Rotate(new Vector3(0, enginRPM, 0), Space.Self);
+        topSolidBlade.Rotate(0,0, enginRPM);
     }
     void engineStart()
     {
@@ -99,12 +101,18 @@ public class HelicopterControllerKit : MonoBehaviour
     void engineAcceleration()
     {
         if (enginePower > enginRPM)
-            enginRPM += Time.deltaTime*5;
+            enginRPM += Time.deltaTime*8;
         engineForce = new Vector3(0, (/*acceleration */Time.deltaTime * enginRPM * (2200) * bladePitch), 0);
     }
     void helicopterAngleSystem()
     {
         bodyTorque = new Vector3(Mathf.Sin(pitch)*30,transform.localEulerAngles.y+ yaw*2, Mathf.Sin(roll)*30);
+    }
+    public void OnGUI()
+    {
+        bladeBlureMaterial.color = new Color(bladeBlureMaterial.color.r, bladeBlureMaterial.color.g, bladeBlureMaterial.color.b, (enginRPM/ enginePower));
+        foreach(var item in bladeSolidMaterials)
+            item.color = new Color(item.color.r, item.color.g, item.color.b, 1-(enginRPM/ enginePower));
     }
 }
 public class HelicopterStatus
