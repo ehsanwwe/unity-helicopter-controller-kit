@@ -2,7 +2,7 @@
 <h3>Realestic physics and easy to use</h3>
 <p>
   <h4>features</h4>
-  1 - smoth and floating body in air ( aerodynamic )
+  1 - aerodynamic controller physics
   <br>
   2 - realworld controller ( changing blade angle for increase or reduce altitude )
   <br>
