@@ -30,6 +30,8 @@ public class HelicopterControllerKit : MonoBehaviour
         body = gameObject.AddComponent<Rigidbody>();
         body.drag = 3;
         body.mass = weight;
+        body.isKinematic = true;//temperory before engineRPM increase enough
+
     }
     void Update()
     {
@@ -106,6 +108,8 @@ public class HelicopterControllerKit : MonoBehaviour
     {
         if (enginePower > enginRPM)
             enginRPM += 1;
+        else
+            body.isKinematic = false;
         engineForce = new Vector3(0, (/*acceleration */Time.deltaTime * enginRPM * (2200) * bladePitch), 0);
     }
     void helicopterAngleSystem()
