@@ -6,8 +6,8 @@
 
 <br>
 <div>
-  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/screenshot1.jpg?raw=true" width="100%" alt="unity helicopter controller kit" align="left">
-  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/bladesystem.gif?raw=true" width="50" alt="unity helicopter controller kit"  >
+  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/screenshot1.jpg?raw=true" width="50%" alt="unity helicopter controller kit" align="left">
+  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/bladesystem.gif?raw=true" width="50%" alt="unity helicopter controller kit"  >
 </div>
 
 <br>
@@ -15,29 +15,32 @@
 <div>
   <h2 align="left">how to use</h2>
   <p>
-    Add <b>SoftBodyGenerator.cs</b> script to your object    
+    1-Add <b>HelicopterControllerKit.cs</b> script to your object
     <br>
+    2-asign Main blade and side blade GameObjects
+    <br>
+    3-asign Main blade and side blade materials
+    <br>
+    4-set Helicopter weight in KG (total mass of helicopter in realestic)
+    <br>
+    5-set Helicopter engine power in HP ( for example a normal city helicopter have 1100KG with an engine with 320 HP )    
+    <br>
+  </p>
+  <br>
+  <p>
     you can get UnityPackage file from bottom link
     <br>
-    <a href="https://github.com/ehsanwwe/Unity-SoftBody-physics/releases">
-      https://github.com/ehsanwwe/Unity-SoftBody-physics/releases
+    <a href="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/releases">
+      https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/releases
     </a>    
   </p>
   <br>
   <p>
-    and enjoy
+    enjoy
   </p>
 </div>
 
-<h2>To do list</h2>
-✔️  # Add a center structure to create a jelly mode in unity softbody physics
-<br>
-📝 #add seperated physics For Fabric and Jelly mode
-<br>
-📝 #add convexhull system to optimize Softbody system
-<br>
-📝 # Add bake Button in editor to store mesh data at template folder into <b>streamingasset</b> folder to solve <b>"reGenerate mesh data of softbody at beginning of each plays"</b>
-<br>
+
 
 <h2>
   support me 
