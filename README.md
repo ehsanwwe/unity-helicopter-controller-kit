@@ -37,7 +37,7 @@
   </p>
   <br>
   <p>
-    you can get UnityPackage file from bottom link
+    you can get UnityPackage file from below link
     <br>
     <a href="https://github.com/ehsanwwe/unity-helicopter-controller-kit/releases">
       https://github.com/ehsanwwe/unity-helicopter-controller-kit/releases
