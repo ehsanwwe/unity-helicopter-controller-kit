@@ -37,6 +37,11 @@ public class HelicopterControllerKit : MonoBehaviour
         checkEngine();
         engineAcceleration();
         helicopterAngleSystem();
+        bladesRotation();
+    }
+    public void LateUpdate()
+    {
+        bladesTransparencyControler(1 - (enginRPM / enginePower), (enginRPM / enginePower));
     }
     void checkInputs()
     {
@@ -87,7 +92,6 @@ public class HelicopterControllerKit : MonoBehaviour
     {
         body.AddRelativeForce(engineForce, ForceMode.Force);
         transform.localEulerAngles = bodyTorque;
-        topSolidBlade.Rotate(0,0, enginRPM);
     }
     void engineStart()
     {
@@ -106,14 +110,30 @@ public class HelicopterControllerKit : MonoBehaviour
     }
     void helicopterAngleSystem()
     {
-        bodyTorque = new Vector3(Mathf.Sin(pitch)*30,transform.localEulerAngles.y+ yaw*2, Mathf.Sin(roll)*30);
+        bodyTorque = new Vector3(Mathf.Sin(pitch)*30,transform.localEulerAngles.y+ yaw/6f, Mathf.Sin(roll)*30);
     }
-    public void OnGUI()
+    void bladesRotation()
     {
-        bladeBlureMaterial.color = new Color(bladeBlureMaterial.color.r, bladeBlureMaterial.color.g, bladeBlureMaterial.color.b, (enginRPM/ enginePower));
-        foreach(var item in bladeSolidMaterials)
-            item.color = new Color(item.color.r, item.color.g, item.color.b, 1-(enginRPM/ enginePower));
+
+        topSolidBlade.Rotate(0, 0, enginRPM);
+        taleSolidBlade.Rotate(0, 0, enginRPM);
+
     }
+    void bladesTransparencyControler(float solidBladeOpacity,float blureBladeOpacity)
+    {
+        bladeBlureMaterial.color = new Color(bladeBlureMaterial.color.r, bladeBlureMaterial.color.g, bladeBlureMaterial.color.b, blureBladeOpacity);
+        foreach (var item in bladeSolidMaterials)
+            item.color = new Color(item.color.r, item.color.g, item.color.b, solidBladeOpacity);
+    }
+    public void OnDisable()
+    {
+        bladesTransparencyControler(1, 0);
+    }
+    public void OnDestroy()
+    {
+        bladesTransparencyControler(1, 0);
+    }
+
 }
 public class HelicopterStatus
 {
