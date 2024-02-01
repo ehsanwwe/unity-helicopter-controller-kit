@@ -6,8 +6,8 @@
 
 <br>
 <div>
-  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/screenshot1.jpg?raw=true" width="50%" alt="unity helicopter controller kit" align="left">
-  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/bladesystem.gif?raw=true" width="50%" alt="unity helicopter controller kit"  >
+  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-kit/blob/main/screenshot1.jpg?raw=true" width="50%" alt="unity helicopter controller kit" align="left">
+  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-kit/blob/main/bladesystem.gif?raw=true" width="50%" alt="unity helicopter controller kit"  >
 </div>
 
 <br>
@@ -30,8 +30,8 @@
   <p>
     you can get UnityPackage file from bottom link
     <br>
-    <a href="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/releases">
-      https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/releases
+    <a href="https://github.com/ehsanwwe/unity-helicopter-controller-kit/releases">
+      https://github.com/ehsanwwe/unity-helicopter-controller-kit/releases
     </a>    
   </p>
   <br>
