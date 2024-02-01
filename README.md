@@ -6,8 +6,8 @@
 
 <br>
 <div>
-  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/screenshot1.jpg?raw=true" width="100%" alt="unity helicopter controller kit" align="left">
-  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/bladesystem.gif?raw=true" width="50" alt="unity helicopter controller kit"  >
+  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/screenshot1.jpg?raw=true" width="50%" alt="unity helicopter controller kit" align="left">
+  <img src="https://github.com/ehsanwwe/unity-helicopter-controller-realestic-kit/blob/main/bladesystem.gif?raw=true" width="50%" alt="unity helicopter controller kit"  >
 </div>
 
 <br>
