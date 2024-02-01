@@ -1,7 +1,16 @@
 <h1>Unity Helicopter Controller kit</h1>
 <h3>Realestic physics and easy to use</h3>
 <p>
-  
+  <h4>features</h4>
+  1 - smoth and floating body in air ( aerodynamic )
+  <br>
+  2 - realworld controller ( changing blade angle for increase or reduce altitude )
+  <br>
+  3 - motion blure system for blades
+  <br>
+  4 - soft and awesome camera tracking system
+  <br>
+  5 - comfortable ( you can attach it to each of helicopter you want to use )
 </p>
 
 <br>
