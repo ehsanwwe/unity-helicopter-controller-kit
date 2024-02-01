@@ -17,9 +17,12 @@
   <p>
     1-Add <b>HelicopterControllerKit.cs</b> script to your object
     <br>
-    2-asign Main blade and side blade GameObjects;
+    2-asign Main blade and side blade GameObjects
+    <br>
     3-asign Main blade and side blade materials
+    <br>
     4-set Helicopter weight in KG (total mass of helicopter in realestic)
+    <br>
     5-set Helicopter engine power in HP ( for example a normal city helicopter have 1100KG with an engine with 320 HP )    
     <br>
   </p>
